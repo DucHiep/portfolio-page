@@ -2,8 +2,7 @@ import Image from 'next/image'
 import {
   nobleLogo,
   HNLogo,
-  waskoLogo,
-  tellyoLogo
+  tellyoLogo, HiwinLogo, VnptLogo
 } from '../../assets'
 import { getDate } from '../date'
 import styles from './timelinegrid.module.scss'
@@ -40,9 +39,10 @@ export function VTimelineGrid() {
       <div className={styles.timelineGridItemAdjoiningCard}/>
       <div className={styles.timelineGridItem}/>
       <div className={styles.timelineGridItem}/>
+      {/* Start */}
       <div className={styles.timelineGridItemWide}>
         <h1>03.2019 - 03.2020</h1>
-        <h2>Working & learning Web Development in London</h2>
+        <h2>Working & learning Web Development in Hiwin Technology</h2>
       </div>
       <div className={styles.timelineGridItemAdjoiningCard}/>
       <div className={styles.timelineGridItem}/>
@@ -52,14 +52,13 @@ export function VTimelineGrid() {
           <div className={styles.cardContentHeader}>
             <div className={styles.companyLogo}>
               <Image
-                alt="Wasko company logo."
-                src={waskoLogo}
-                height={13}
+                alt="Hiwin Technology logo."
+                src={HiwinLogo}
+                height={55}
                 width={55}/>
             </div>
             <div className={styles.companyInfo}>
-              <h1 className={styles.companyTitle}>Wasko</h1>
-              <h2 className={styles.cardContentDetails}>Gliwice</h2>
+              <h1 className={styles.companyTitle}>Hiwin Technology</h1>
               <h2 className={styles.cardContentDetails}>08.2020 - 10.2020</h2>
             </div>
           </div>
@@ -79,11 +78,11 @@ export function VTimelineGrid() {
             - creating an asynchronous communication between client and server via <b>REST API</b>,<br/>
             - setting up server with database.<br/>
             <br/>
-            Languages: JavaScript, <b>React</b>, <b>PHP</b>.<br/>
-            Database: <b>MySQL</b>.<br/>
-            Styling: Ant Design UI, CSS.<br/>
+            Languages: SpringBoot, <b>React</b>.<br/>
+            Database: <b>Oracle SQL</b>.<br/>
+            Styling: SASS.<br/>
             Version Control System: <b>GitHub.</b><br/>
-            Issue trancing: Trello.
+            Issue trancing: Jira.
           </p>
         </div>
       </div>
@@ -94,14 +93,14 @@ export function VTimelineGrid() {
           <div className={styles.cardContentHeader}>
             <div className={styles.companyLogo} style={{backgroundColor: "#0E2245"}}>
               <Image
-                alt="Noble Systems company logo."
-                src={nobleLogo}
+                alt="Vnpt Technology company logo."
+                src={VnptLogo}
                 height={50}
                 width={50}/>
             </div>
             <div className={styles.companyInfo}>
-              <h1 className={styles.companyTitle}>Noble Systems</h1>
-              <h2 className={styles.cardContentDetails}>Kraków</h2>
+              <h1 className={styles.companyTitle}>VNPT Technology</h1>
+              <h2 className={styles.cardContentDetails}>OneHome</h2>
               <h2 className={styles.cardContentDetails}>10.2020 - 09.2021</h2>
             </div>
           </div>
@@ -131,13 +130,10 @@ export function VTimelineGrid() {
             -constructing complete translation system which let the user to change language of application
             (if not chosen, language was detected automatically).
             <br/>
-            Agile management: <b>Scrum, Agile</b>.<br/>
-            Version control system: <b>Azure DevOps, Bitbucket</b>.<br/>
-            Issue tracking tool: <b>Jira, Trelllo</b>.<br/>
-            Knowledge repository: <b>Confluence</b>.<br/>
-            Styling: <b>SCSS, LESS, Semantic UI</b>.<br/>
-            Testing: <b>React Testing Library, JEST</b>.<br/>
-            Communication tool: <b>Microsoft Teams, Zoom</b>.
+            Languages: SpringBoot, <b>AngularJs</b>.<br/>
+            Database: <b>MySQL</b>.<br/>
+            Version Control System: <b>GitHub.</b><br/>
+            Issue trancing: Jira.
           </p>
         </div>
       </div>
@@ -145,19 +141,20 @@ export function VTimelineGrid() {
       <div className={styles.timelineGridItemAdjoiningCard}/>
       <div className={styles.timelineGridItem}/>
       <div className={styles.timelineGridItem}/>
+
       <div className={styles.timelineGridItemCard}>
         <div className={styles.cardContent}>
           <div className={styles.cardContentHeader}>
-            <div className={styles.companyLogo}>
+            <div className={styles.companyLogo} style={{backgroundColor: "#0E2245"}}>
               <Image
-                alt="Tellyo company logo."
-                src={tellyoLogo}
-                height={50}
-                width={50}/>
+                  alt="Vnpt Technology company logo."
+                  src={VnptLogo}
+                  height={50}
+                  width={50}/>
             </div>
             <div className={styles.companyInfo}>
-              <h1 className={styles.companyTitle}>Tellyo OY</h1>
-              <h2 className={styles.cardContentDetails}>Łódź</h2>
+              <h1 className={styles.companyTitle}>Vnpt Technology</h1>
+              <h2 className={styles.cardContentDetails}>DAC</h2>
               <h2 className={styles.cardContentDetails}>09.2021 - now</h2>
             </div>
           </div>
@@ -187,6 +184,8 @@ export function VTimelineGrid() {
       </div>
       <div className={styles.timelineGridItem}/>
       <div className={styles.timelineGridItem}/>
+
+      {/*End */}
       <div className={styles.timelineGridItemWide}>
         <div className={styles.timelinePoint}/>
         <h1>{getDate()}</h1>

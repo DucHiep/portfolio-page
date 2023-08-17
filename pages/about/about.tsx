@@ -1,26 +1,11 @@
-import Image from 'next/image'
+
 import Head from 'next/head'
 import React from 'react'
 import { Fade } from 'react-awesome-reveal'
 import {
   VMenuBar,
-  VPhotoGrid,
   VFooter
 } from '../../utils'
-import {
-  belayTheCppLogo,
-  bonoboPressLogo,
-  comicCommission1,
-  comicCommission2,
-  cssTricksLogo,
-  dribbbleLogo,
-  freeCodeCampLogo,
-  hashnodeLogo,
-  logoCommission,
-  posterCommission,
-  schemeCommission,
-  sitePointLogo,
-} from '../../assets'
 import styles from './about.module.scss'
 
 export default function VAbout() {

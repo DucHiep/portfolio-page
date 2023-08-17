@@ -2,8 +2,6 @@ import { VIcon } from './icon'
 import {
   gmailLogo,
   gmailLogoHover,
-  linkedInLogo,
-  linkedInLogoHover,
   gitHubLogo,
   gitHubLogoHover
 } from '../assets'
